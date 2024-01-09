@@ -1,0 +1,25 @@
+//set break-point here
+$breakpointFor_sp_sm: 400px; //for iPhone X,6,7,8
+$breakpointFor_sp_lg: 430px; //for iPhone 6,7,8Plus
+$breakpointFor_tab_sm: 780px; //for iPad
+$breakpointFor_tab_lg: 1040px; //for iPad Pro
+
+$breakpoints: (
+  "sp_sm": "screen and (max-width: #{$breakpointFor_sp_sm} )",
+  "sp_lg": "screen and (min-width: #{$breakpointFor_sp_sm + 1px} ) and (max-width: #{$breakpointFor_sp_lg} )",
+  "sp": "screen and (max-width: #{$breakpointFor_sp_lg} )",
+  "tab_sm": "screen and (min-width: #{$breakpointFor_sp_lg + 1px} ) and (max-width: #{$breakpointFor_tab_sm} )",
+  "tab_lg": "screen and (min-width: #{$breakpointFor_tab_sm + 1px} ) and (max-width: #{$breakpointFor_tab_lg} )",
+  "tab": "screen and (max-width: #{$breakpointFor_tab_lg} )",
+  "pc": "screen and (min-width: #{$breakpointFor_tab_lg + 1px})",
+);
+
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+/**************
+end mixin
+***************/

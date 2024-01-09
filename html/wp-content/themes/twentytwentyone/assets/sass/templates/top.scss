@@ -1,0 +1,133 @@
+@import '../foundation/color';
+/* /////////// */
+/* ###【header】 */
+/* /////////// */
+.test {
+  width: 100%;
+  height: 100px;
+}
+.nav_pc {
+  
+}
+.header {
+  margin-top: 28px;
+}
+.nav_flex{
+  justify-content: space-between;
+}
+.site_name {
+  margin-bottom: 20px!important;
+  color:$colorBlackLight;
+}
+.site_logo p img{
+  width: 380px;
+  transition: all 0.3s ease;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.contactButtonsWrapper {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 20px;
+}
+.sns_buttons {
+  margin-right: 20px;
+}
+.instagramButton {
+  margin-right: 10px;
+  transition: all 0.3s ease;
+  &:hover {
+      opacity: 0.7;
+    }
+}
+.instagramButton img {
+  width: 45px;
+}
+.facebookButton {
+  transition: all 0.3s ease;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.facebookButton img {
+  width: 45px;
+}
+
+.accessButton {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  padding: 25px 13px;
+  height: 45px;
+  background: $bgColorPrimaryGradient;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+  &:hover {
+      opacity: 0.7;
+    }
+}
+.accessButton img{
+  width: 18px;
+  margin-right: 5px;
+  display: inline;
+}
+.reservationButton {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  padding: 25px 13px;
+  height: 45px;
+  background: $bgColorPrimaryGradient;
+  transition: all 0.3s ease;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.reservationButton p{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.reservationButton p img{
+  margin-left: 8px;
+  display: inline;
+  width: 18px;
+}
+
+.nav_item {
+  border-top: solid 2px #d2d2d2;
+  border-bottom: solid 2px #d2d2d2;
+  padding: 6px;
+  margin-right: 10px;
+  min-width: 90px;
+  transition: all 0.3s ease;
+}
+.nav_item:hover {
+  border-top: solid 2px $colorPrimary;
+  border-bottom: solid 2px $colorPrimary;
+}
+.nav_item a{
+  text-decoration: none;
+  color:$colorPrimary;
+}
+.nav_item a:hover{
+  text-decoration: none;
+  color:$colorPrimary!important;
+}
+.nav_item p {
+  font-size: 12px;
+  margin-bottom: 4px!important;
+}
+.nav_item .descriptionXs{
+  font-size: 10px;
+}
+.nav_item:last-child {
+  margin-right: 0;
+}
+/* /////////// */
+/* End【header】 */
+/* /////////// */

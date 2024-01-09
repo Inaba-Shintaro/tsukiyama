@@ -1,0 +1,233 @@
+@import './color';
+@import './mixin';
+@import './var.scss';
+
+/* /////////// */
+/* ###【wpadminbarの位置調整】 */
+/* /////////// */
+html {
+  margin: 0 0 32px !important;
+}
+
+#wpadminbar {
+  top: unset !important;
+  bottom: 0;
+}
+/* /////////// */
+/* ###【wpadminbarの位置調整】 */
+/* /////////// */
+
+/* /////////// */
+/* ###【common】 */
+/* /////////// */
+
+/* /////////// */
+/* ###【position】 */
+/* /////////// */
+.flexWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.inner {
+  margin: 0 auto;
+  width: $innerWidth;
+  max-width: 1200px;
+
+  @include mq('tab_lg') {
+    width: 100%;
+  }
+
+  @include mq('tab_sm') {
+    width: 96%;
+  }
+
+  @include mq('sp_lg') {
+    width: 85%;
+  }
+
+  @include mq('sp_sm') {
+    width: 85%;
+  }
+}
+
+.innerLg {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.innerLg_sp {
+  margin: 0 auto;
+  width: $innerWidth;
+  max-width: 1200px;
+
+  @include mq('sp_lg') {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  @include mq('sp_sm') {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.content-center {
+  margin: 0 auto;
+}
+
+.sectionPadding {
+  padding: 80px 0px;
+
+  @include mq('sp_lg') {
+    padding: 60px 0px;
+  }
+
+  @include mq('sp_sm') {
+    padding: 60px 0px;
+  }
+}
+
+.modifyLinkPosition {
+  padding-top: $headerHeight;
+  margin-top: $headerHeight;
+
+  @include mq('sp_lg') {
+    padding-top: $headerHeight_sp;
+    margin-top: $headerHeight_sp;
+  }
+
+  @include mq('sp_sm') {
+    padding-top: $headerHeight_sp;
+    margin-top: $headerHeight_sp;
+  }
+}
+
+.headingWrapper {
+  margin-bottom: 60px;
+  border-bottom: $borderDeclarationPrimary;
+
+  @include mq('sp_lg') {
+    margin-bottom: 27px;
+  }
+
+  @include mq('sp_sm') {
+    margin-bottom: 27px;
+  }
+
+}
+
+// .headingUnderLine {
+//   position: relative;
+
+//   &:after {
+//     position: absolute;
+//     bottom: -10px;
+//     left: 0;
+//     width: 100%;
+//     height: 2px;
+//     content: '';
+//     border-radius: 3px;
+//     background-image: linear-gradient(to left, c.$colorPrimary 0%, c.$colorSecondary 100%);
+//   }
+// }
+
+/* 【color】 */
+.colorfff {
+  color: #fff;
+}
+
+.color000 {
+  color: #000;
+}
+
+.colorWhite {
+  color: $colorWhite;
+}
+
+.colorBlack {
+  color: $colorBlack;
+}
+
+.colorPrimary {
+  color: $colorPrimary;
+}
+
+// .colorPrimaryOpa {
+//   color: $colorPrimaryOpacity;
+// }
+
+// .colorSecondary {
+//   color: $colorSecondary;
+// }
+
+// .colorSecondaryOpa {
+//   color: $colorSecondaryOpacity;
+// }
+
+/* 【font_size】 */
+@mixin commonFontStyle {
+  letter-spacing: normal;
+  line-height: 1.2;
+}
+
+// 48
+// 40
+// ↑これはまた別で用意する
+
+.sectionHeading {
+  font-size: 32px;
+  @include commonFontStyle;
+
+  @include mq('sp_lg') {
+    font-size: 22px;
+  }
+
+  @include mq('sp_sm') {
+    font-size: 22px;
+  }
+}
+
+.subHeading {
+  font-size: 30px;
+  @include commonFontStyle;
+}
+
+.descriptionXs {
+  font-size: 12px;
+  @include commonFontStyle;
+}
+
+.descriptionSm {
+  font-size: 14px;
+  @include commonFontStyle;
+}
+
+.descriptionMd {
+  font-size: 18px;
+  @include commonFontStyle;
+}
+
+.descriptionLg {
+  font-size: 20px;
+  @include commonFontStyle;
+}
+
+.descriptionXl {
+  font-size: 24px;
+  @include commonFontStyle;
+}
+
+//【other】
+// 【hr】
+.hrColorMain {
+  background-color: $colorPrimary;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+}
+
+/* /////////// */
+/* End【common】 */
+/* /////////// */

@@ -17,5 +17,6 @@ html//wp-content/themes/*
 !html/wp-content/themes/twentytwentyone
 html/wp-content/themes/twentytwentyone/package-lock.json
 html/wp-content/themes/twentytwentyone/images/
+html/wp-content/themes/twentytwentyone/node_modules/
 html/wp-content/themes/twentytwentyone/css/.sass-cache/*
 html/wp-includes/*
